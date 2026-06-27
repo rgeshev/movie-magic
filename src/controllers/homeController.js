@@ -5,7 +5,7 @@ const homeController = Router();
 
 homeController.get('/', async (req, res) => {
     const movies = await movieService.getAll();
-    res.render('home', { movie: movies[1] });
+    res.render('home', { movies });
 });
 
 homeController.get('/about', (req, res) => {

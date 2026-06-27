@@ -5,19 +5,20 @@
                 <div class="band">
 
                     <!-- If there are posts for creature in the database display each of them -->
+                    {{#each movies}}
                     <div class="flip flip-vertical">
                         <div class="front">
-                            <img src="{{movie.imageUrl}}"
-                                alt="{{movie.title}}">
+                            <img src="{{imageUrl}}"
+                                alt="{{title}}">
                         </div>
                         <div class="back">
-                            <h1>{{movie.title}}</h1>
-                            <h2>Genre: {{movie.genre}}</h2>
-                            <p>Description: {{movie.description}}</p>
+                            <h1>{{title}}</h1>
+                            <h2>Genre: {{genre}}</h2>
+                            <p>Description: {{description}}</p>
                             <a href="#" class="details">Details</a>
                         </div>
                     </div>
-
+                    {{/each}}
                     <!-- If there are still no posts in the database display: -->
                     <!-- <div class="no-posts">
                         <p class="no-offer">There are no posts yet...</p>
