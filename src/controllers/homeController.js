@@ -1,11 +1,9 @@
 import { Router } from 'express';
-import { getAllMovies } from '../repositories/movieRepository.js';
 
 const homeController = Router();
 
 homeController.get('/', async (req, res) => {
-    const movies = await getAllMovies();
-
+    const movies = await movieService.getAll();
     res.render('home');
 });
 
