@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/rgeshev/movie-magic/issues"
   },
-  "homepage": "https://github.com/rgeshev/movie-magic#readme"
+  "homepage": "https://github.com/rgeshev/movie-magic#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
