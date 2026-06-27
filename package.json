@@ -1,0 +1,21 @@
+{
+  "name": "movie-magic",
+  "version": "1.0.0",
+  "description": "SoftUni JS Back-End Course Workshop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgeshev/movie-magic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/rgeshev/movie-magic/issues"
+  },
+  "homepage": "https://github.com/rgeshev/movie-magic#readme"
+}
