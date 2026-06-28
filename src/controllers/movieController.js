@@ -19,7 +19,9 @@ movieController.post('/create', async (req, res) => {
 movieController.get('/:movieId', async (req, res) => {
     const movieId = req.params.movieId;
 
-    res.render('movies/details')
+    const movie = await movieService.getById(movieId);
+
+    res.render('movies/details', { movie })
 });
 
 export default movieController;
