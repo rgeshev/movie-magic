@@ -5,6 +5,10 @@ const movieController = Router();
 
 movieController.get('/create', (req, res) => {
     res.render('movies/create');
-})
+});
+
+movieController.post('/create', (req, res) => {
+    console.log('post request received');
+});
 
 export default movieController;
