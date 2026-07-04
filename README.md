@@ -72,6 +72,6 @@ SoftUni JS Back-End Course Workshop
 - [x] Migrate database `npx prisma migrate dev --name add_movies_table` or `npx prisma db push`
 
 ### Refactor Movies
-- [] Remove uuid
+- [x] Remove uuid
 - [] Create Movie
 - [] Refactor Read all movies

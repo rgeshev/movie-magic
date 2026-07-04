@@ -22,7 +22,6 @@ model Movie {
   imageUrl    String
   rating      Float
   description String?
-  releaseDate DateTime
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 

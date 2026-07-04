@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "movies" ALTER COLUMN "releaseDate" SET DEFAULT CURRENT_TIMESTAMP;
