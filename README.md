@@ -84,10 +84,13 @@ SoftUni JS Back-End Course Workshop
 - [x] Add artist view
 - [x] Add artist controller
 - [x] Add to routes
-- [] Add header link
+- [x] Add header link
+- [x] Modify create form
+- [x] Add artist post action
 - [] Add artist service
 - [] Add artist repository
 
 
 ### Bonuses
 - [] Search filter in db
+- [] Name in movie
