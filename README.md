@@ -65,6 +65,13 @@ SoftUni JS Back-End Course Workshop
  - [x] Initialize prisma `npx prisma init --output ../generated/prisma`
  - [x] Add database_url env variable
  - [x] Generate first client `npx prisma generate`
+ - [] Instantiate prisma client
 
-### Setup models- [x] Add Movie model
+### Setup models
+- [x] Add Movie model
 - [x] Migrate database `npx prisma migrate dev --name add_movies_table` or `npx prisma db push`
+
+### Refactor Movies
+- [] Remove uuid
+- [] Create Movie
+- [] Refactor Read all movies
