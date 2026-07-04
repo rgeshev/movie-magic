@@ -27,3 +27,14 @@ model Movie {
 
   @@map("movies")
 }
+
+model Artist {
+  id        Int      @id @default(autoincrement())
+  name      String
+  born      String
+  imageUrl  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt 
+
+  @@map("artists")
+}

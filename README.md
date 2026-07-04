@@ -78,13 +78,15 @@ SoftUni JS Back-End Course Workshop
 - [x] Movie details page
 - [x] Remove file persistance related code
 
-### Cast
-- [] Add resources
-- [] Add cast model
-- [] Add cast page
-- [] Add cast controller
-- [] Add cast service
-- [] Add cast repository
+### Artist
+- [x] Add resources
+- [x] Add artist model
+- [x] Add artist view
+- [x] Add artist controller
+- [x] Add to routes
+- [] Add header link
+- [] Add artist service
+- [] Add artist repository
 
 
 ### Bonuses
