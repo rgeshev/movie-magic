@@ -51,3 +51,17 @@ SoftUni JS Back-End Course Workshop
  - [x] Dynamic page title (basic)
  - [x] Rating (temp solution)
  - [x] File Persistance
+
+ ## Workshop 2 - PostgreSQL and Prisma
+
+ ### Prerequisites
+ - [x] PostgreSQL Installed `psql --version`
+ - [x] GUI Client 
+
+ ### Setup Database
+ - [x] Install and setup typescript support
+ - [x] Change npm start script to use tsx `tsx --watch src/index.js`
+ - [x] Install prisma related packages
+ - [x] Initialize prisma `npx prisma init --output ../generated/prisma`
+ - [x] Add database_url env variable
+ - [x] Generate first client `npx prisma generate`
