@@ -87,10 +87,11 @@ SoftUni JS Back-End Course Workshop
 - [x] Add header link
 - [x] Modify create form
 - [x] Add artist post action
-- [] Add artist service
-- [] Add artist repository
+- [x] Add artist service
+- [x] Add artist repository
 
 
 ### Bonuses
 - [] Search filter in db
 - [] Name in movie
+- [] Modify service export
