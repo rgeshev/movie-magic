@@ -98,9 +98,11 @@ SoftUni JS Back-End Course Workshop
 - [x] Attach function
 
 ### Show Artists on Details Page
+- [x] Modify details view
 - [] Link to attach page
 
 ### Bonuses
 - [] Search filter in db
 - [] Name in movie (Explicit Many-to-Many)
 - [] Modify service export
+- [] Show filtered artists in attach page
