@@ -106,4 +106,4 @@ SoftUni JS Back-End Course Workshop
 - [x] Search filter in db
 - [] Name in movie (Explicit Many-to-Many)
 - [] Modify service export
-- [] Show filtered artists in attach page
+- [x] Show filtered artists in attach page
