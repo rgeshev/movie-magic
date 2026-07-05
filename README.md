@@ -91,7 +91,7 @@ SoftUni JS Back-End Course Workshop
 - [x] Add artist repository
 
 ### Attach Artist to Movie
-- [] Add relation between artists and movies (Implicit many-to-many)
+- [x] Add relation between artists and movies (Implicit many-to-many)
 - [] Add page view
 - [] Link to attach page
 - [] Add dynamic data

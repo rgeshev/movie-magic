@@ -35,4 +35,8 @@ movieController.get('/:movieId', async (req, res) => {
     res.render('movies/details', { movie, pageTitle: 'Movie Details', ratingStars })
 });
 
+movieController.get('/:movieId/attach', async (req, res) => {
+    res.render('movies/attach', { pageTitle: 'Attach Movie' });
+});
+
 export default movieController;
