@@ -23,8 +23,12 @@
 
                             <p class="disc">Description: {{movie.description}}</p>
                                 <p class="card-category">Category: {{movie.category}}</p>
+                            <div class="card_buttons">
+                                <a href="/movies/{{movie.id}}/attach" class="details">Attach</a>
+                            </div>
                         </div>
                     </div>
+
                     <div class="card_right">
                         <img src="{{movie.imageUrl}}"
                             alt="{{movie.title}}">
