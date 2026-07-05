@@ -25,7 +25,7 @@ model Movie {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
-  cast Artist[]
+  artists Artist[]
 
   @@map("movies")
 }

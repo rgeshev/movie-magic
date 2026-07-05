@@ -100,6 +100,7 @@ SoftUni JS Back-End Course Workshop
 ### Show Artists on Details Page
 - [x] Modify details view
 - [x] Link to attach page
+- [x] Show dynamic cast
 
 ### Bonuses
 - [] Search filter in db

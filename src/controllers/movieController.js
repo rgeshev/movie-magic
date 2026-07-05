@@ -29,6 +29,7 @@ movieController.get('/:movieId', async (req, res) => {
     const movieId = req.params.movieId;
 
     const movie = await movieService.getById(movieId);
+    
 
     // Prepare view data | Quick and dirty solution TODO: Fix it
     const ratingStars = '&#x2605;'.repeat(Math.floor(movie.rating));
