@@ -29,7 +29,7 @@ movieController.get('/:movieId', async (req, res) => {
     const movieId = req.params.movieId;
 
     const movie = await movieService.getById(movieId);
-    
+
 
     // Prepare view data | Quick and dirty solution TODO: Fix it
     const ratingStars = '&#x2605;'.repeat(Math.floor(movie.rating));
@@ -41,7 +41,7 @@ movieController.get('/:movieId/attach', async (req, res) => {
     const movieId = req.params.movieId;
 
     const movie = await movieService.getById(movieId);
-    const artists = await artistService.getAll();
+    const artists = await artistService.getAll({exclude: movie.artists.map(artist => artist.id)});
 
     res.render('movies/attach', { pageTitle: 'Attach Movie', movie, artists });
 });
