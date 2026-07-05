@@ -90,8 +90,17 @@ SoftUni JS Back-End Course Workshop
 - [x] Add artist service
 - [x] Add artist repository
 
+### Attach Artist to Movie
+- [] Add relation between artists and movies (Implicit many-to-many)
+- [] Add page view
+- [] Link to attach page
+- [] Add dynamic data
+- [] Populate artist select
+- [] Attach function
+
+### Show Artists on Details Page
 
 ### Bonuses
 - [] Search filter in db
-- [] Name in movie
+- [] Name in movie (Explicit Many-to-Many)
 - [] Modify service export
