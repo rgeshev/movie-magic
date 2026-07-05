@@ -94,8 +94,8 @@ SoftUni JS Back-End Course Workshop
 - [x] Add relation between artists and movies (Implicit many-to-many)
 - [x] Add page view
 - [x] Add dynamic data
-- [] Populate artist select
-- [] Attach function
+- [x] Populate artist select
+- [x] Attach function
 
 ### Show Artists on Details Page
 - [] Link to attach page
