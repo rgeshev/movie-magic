@@ -107,3 +107,11 @@ SoftUni JS Back-End Course Workshop
 - [] Name in movie (Explicit Many-to-Many)
 - [] Modify service export
 - [x] Show filtered artists in attach page
+
+## Workshop 3 - Session and Authentication
+
+### Intro
+- [x] Add resources
+
+### Register
+- [] Add auth controller
