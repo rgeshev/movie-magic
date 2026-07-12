@@ -1,7 +1,8 @@
 import { log } from "node:console";
+import userRepository from "../repositories/userRepository.js";
 
 export function register(userData) {
-    log('Registering user:', userData);
+    return userRepository.create(userData);
 }
 
 const authService = {
