@@ -12,8 +12,13 @@ export async function register(userData) {
     return result;
 }
 
+export async function login(userData) {
+    const user = await userRepository.findByEmail(userData.email);
+}
+
 const authService = {
     register,
+    login,
 };
 
 export default authService;
