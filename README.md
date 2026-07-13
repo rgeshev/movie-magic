@@ -124,10 +124,10 @@ SoftUni JS Back-End Course Workshop
 
 ### Login
 - [x] Add login page
-- [] Add login post action
-- [] Add login service method
-- [] Add login repository method
-- [] Validate password
+- [x] Add login post action
+- [x] Add login service method
+- [x] Add findByEmail repository method
+- [x] Validate password
 
 
 ### Bonuses
