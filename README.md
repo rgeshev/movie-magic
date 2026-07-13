@@ -128,6 +128,7 @@ SoftUni JS Back-End Course Workshop
 - [x] Add login service method
 - [x] Add findByEmail repository method
 - [x] Validate password
+- [x] Issue JWT token
 
 
 ### Bonuses
