@@ -120,5 +120,16 @@ SoftUni JS Back-End Course Workshop
 - [x] Add service
 - [x] Add repository
 - [x] Add model
-- [] Hash password
+- [x] Hash password
+
+### Login
+- [x] Add login page
+- [] Add login post action
+- [] Add login service method
+- [] Add login repository method
+- [] Validate password
+
+
+### Bonuses
 - [] Validate repeat password
+
