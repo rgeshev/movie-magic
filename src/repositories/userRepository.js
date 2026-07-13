@@ -1,7 +1,14 @@
+import { prisma } from '../lib/prisma.js';
 
-export function create(userData) {
+export async function create(userData) {
+    const result = await prisma.user.create({
+        data: {
+            email: userData.email,
+            password: userData.password,
+        }
+    });
 
-    console.log('Creating user in repo:', userData);
+    return result;
 }
 
 const userRepository = {
