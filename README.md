@@ -120,7 +120,7 @@ SoftUni JS Back-End Course Workshop
 - [x] Add service
 - [x] Add repository
 - [x] Add model
-- [x] Hash password
+- [x] Hash password `npm i bcrypt`
 
 ### Login
 - [x] Add login page
@@ -128,7 +128,8 @@ SoftUni JS Back-End Course Workshop
 - [x] Add login service method
 - [x] Add findByEmail repository method
 - [x] Validate password
-- [x] Issue JWT token
+- [x] Issue JWT token `npm i jsonwebtoken`
+- [] Return token in cookie
 
 
 ### Bonuses
