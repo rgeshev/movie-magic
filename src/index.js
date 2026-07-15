@@ -19,6 +19,9 @@ app.use(express.static('./src/public'));
 // Setup body parser
 app.use(express.urlencoded());
 
+// Auth middleware
+app.use(authMiddleware);
+
 // Setup routes
 app.use(routes);
 
