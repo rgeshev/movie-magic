@@ -23,9 +23,13 @@
 
                             <p class="disc">Description: {{movie.description}}</p>
                                 <p class="card-category">Category: {{movie.category}}</p>
+                            {{#if isOwner}}
                             <div class="card_buttons">
                                 <a href="/movies/{{movie.id}}/attach" class="details">Attach</a>
+                                <a href="/movies/{{movie.id}}/edit" class="details">Edit</a>
+                                <a href="/movies/{{movie.id}}/delete" class="details">Delete</a>
                             </div>
+                            {{/if}}
                         </div>
                     </div>
 
