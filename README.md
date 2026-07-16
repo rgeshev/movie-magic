@@ -146,11 +146,14 @@ SoftUni JS Back-End Course Workshop
 - [x] Add user movies relation
 - [x] Add owner on movie create
 - [x] Show dynamic details buttons
-- [] Implement delete button
+- [x] Implement delete button
+- [x] Add static edit page
+- [x] Add dynamic values to edit page
 
 ### Dynamic Navigation
 
 ### Bonuses
 - [] Validate repeat password
 - [] Automatic login on register
+- [] Fix secret
 
