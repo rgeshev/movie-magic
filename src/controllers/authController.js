@@ -1,6 +1,6 @@
 import { Router } from "express";
 import authService from "../services/authService.js";
-import { isGuest } from "../middlewares/authMiddleware.js";
+import { isGuest, isAuth } from "../middlewares/authMiddleware.js";
 
 const authController = Router();
 
@@ -17,17 +17,17 @@ authController.post("/register", isGuest, async (req, res) => {
 });
 
 authController.get("/login", isGuest, (req, res) => {
-    res.render("auth/login");
+  res.render("auth/login");
 });
 
 authController.post("/login", isGuest, async (req, res) => {
-    const { email, password } = req.body;
+  const { email, password } = req.body;
 
-    const token =await authService.login({ email, password });
+  const token = await authService.login({ email, password });
 
-    res.cookie('auth', token, { httpOnly: true });
+  res.cookie("auth", token, { httpOnly: true });
 
-    res.redirect("/");
+  res.redirect("/");
 });
 
 authController.get("/logout", isAuth, (req, res) => {

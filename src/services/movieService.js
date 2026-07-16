@@ -10,9 +10,10 @@ function getById(movieId) {
   return movieRepository.getById(id);
 }
 
-function create(movieData) {
+function create(movieData, userId) {
   movieData.rating = Number(movieData.rating);
   movieData.year = Number(movieData.year);
+  movieData.ownerId = userId;
 
   return movieRepository.create(movieData);
 }

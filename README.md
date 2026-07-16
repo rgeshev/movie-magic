@@ -132,7 +132,8 @@ SoftUni JS Back-End Course Workshop
 - [x] Return token in cookie
 
 ### Logout
-- [] 
+- [x] Add logout action
+- [x] Use logout on invalid token
 
 ### Authentication & Authorization
 - [x] Create auth middleware
@@ -142,7 +143,8 @@ SoftUni JS Back-End Course Workshop
 - [x] Add isGuest guard
 
 ### Edit & Delete Movies
-- [] Add user movies relation
+- [x] Add user movies relation
+- [] Add owner on movie create
 
 ### Dynamic Navigation
 
