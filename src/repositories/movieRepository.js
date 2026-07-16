@@ -1,65 +1,74 @@
-import fs from 'fs/promises';
-import { prisma } from '../lib/prisma.js';
+import fs from "fs/promises";
+import { prisma } from "../lib/prisma.js";
 
 async function getAll(filter = {}) {
-    let movies = await prisma.movie.findMany({
-        where: {
-            year: filter.year || undefined,
-            genre: {
-                equals: filter.genre || undefined,
-                mode: 'insensitive'
-            },
-            title: {
-                contains: filter.search,
-                mode: 'insensitive'
-            }
-        }
-    });
+  let movies = await prisma.movie.findMany({
+    where: {
+      year: filter.year || undefined,
+      genre: {
+        equals: filter.genre || undefined,
+        mode: "insensitive",
+      },
+      title: {
+        contains: filter.search,
+        mode: "insensitive",
+      },
+    },
+  });
 
-    return movies;
+  return movies;
 }
 
 async function getById(movieId) {
-    const movie = await prisma.movie.findUnique({
-        where: { id: movieId },
-        include: {
-            artists: true
-        }
-    });
+  const movie = await prisma.movie.findUnique({
+    where: { id: movieId },
+    include: {
+      artists: true,
+    },
+  });
 
-    if (!movie) {
-        throw new Error('No movie found!')
-    }
+  if (!movie) {
+    throw new Error("No movie found!");
+  }
 
-    return movie;
+  return movie;
 }
 
 async function create(movieData) {
-    const movie = await prisma.movie.create({
-        data: movieData,
-    });
+  const movie = await prisma.movie.create({
+    data: movieData,
+  });
 
-    return movie;
+  return movie;
 }
 
 async function attachArtist(movieId, artistId) {
-    const result = await prisma.movie.update({
-        where: { id: movieId },
-        data: {
-            artists: {
-                connect: { id: artistId }
-            }
-        }
-    });
-    
-    return result;
+  const result = await prisma.movie.update({
+    where: { id: movieId },
+    data: {
+      artists: {
+        connect: { id: artistId },
+      },
+    },
+  });
+
+  return result;
+}
+
+async function remove(movieId) {
+  const result = await prisma.movie.delete({
+    where: { id: movieId },
+  });
+
+  return result;
 }
 
 const movieRepository = {
-    getAll,
-    create,
-    getById,
-    attachArtist
-}
+  getAll,
+  create,
+  getById,
+  attachArtist,
+  remove,
+};
 
 export default movieRepository;

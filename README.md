@@ -146,6 +146,7 @@ SoftUni JS Back-End Course Workshop
 - [x] Add user movies relation
 - [x] Add owner on movie create
 - [x] Show dynamic details buttons
+- [] Implement delete button
 
 ### Dynamic Navigation
 
