@@ -131,10 +131,20 @@ SoftUni JS Back-End Course Workshop
 - [x] Issue JWT token `npm i jsonwebtoken`
 - [x] Return token in cookie
 
+### Logout
+- [] 
+
 ### Authentication & Authorization
 - [x] Create auth middleware
 - [x] Setup cookie parser
 - [x] Validate token
+- [x] Add isAuthenticated guard
+- [x] Add isGuest guard
+
+### Edit & Delete Movies
+- [] Add user movies relation
+
+### Dynamic Navigation
 
 ### Bonuses
 - [] Validate repeat password
