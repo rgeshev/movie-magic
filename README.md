@@ -133,7 +133,8 @@ SoftUni JS Back-End Course Workshop
 
 ### Authentication & Authorization
 - [x] Create auth middleware
-- [] Validate token
+- [x] Setup cookie parser
+- [x] Validate token
 
 ### Bonuses
 - [] Validate repeat password

@@ -1,23 +1,30 @@
-import express from 'express';
-import { engine } from 'express-handlebars';
+import express from "express";
+import { engine } from "express-handlebars";
+import cookieParser from "cookie-parser";
 
-import routes from './routes.js'
-
+import { authMiddleware } from "./middlewares/authMiddleware.js";
+import routes from "./routes.js";
 
 const app = express();
 
 // Setup handlebars
-app.engine('hbs', engine({
-    extname: 'hbs',
-}));
-app.set('view engine', 'hbs');
-app.set('views', './src/views');
+app.engine(
+  "hbs",
+  engine({
+    extname: "hbs",
+  }),
+);
+app.set("view engine", "hbs");
+app.set("views", "./src/views");
 
 // Setup static assets
-app.use(express.static('./src/public'));
+app.use(express.static("./src/public"));
 
 // Setup body parser
 app.use(express.urlencoded());
+
+// Setup cookie parser
+app.use(cookieParser());
 
 // Auth middleware
 app.use(authMiddleware);
@@ -26,4 +33,6 @@ app.use(authMiddleware);
 app.use(routes);
 
 // Start the server
-app.listen(5000, () => console.log('Server is listening on http://localhost:5000...'));
+app.listen(5000, () =>
+  console.log("Server is listening on http://localhost:5000..."),
+);

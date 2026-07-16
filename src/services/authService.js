@@ -28,7 +28,7 @@ export async function login(userData) {
     }
 
     // Issue token
-    const payload = { userId: user.id, email: user.email };
+    const payload = { id: user.id, email: user.email };
 
     // TODO fix this secret
     const token = jwt.sign(payload, 'SECRETGOESHERE', { expiresIn: '1h' });
