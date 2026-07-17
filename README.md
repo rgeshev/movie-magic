@@ -149,6 +149,7 @@ SoftUni JS Back-End Course Workshop
 - [x] Implement delete button
 - [x] Add static edit page
 - [x] Add dynamic values to edit page
+- [] Implement post action
 
 ### Dynamic Navigation
 
@@ -156,4 +157,5 @@ SoftUni JS Back-End Course Workshop
 - [] Validate repeat password
 - [] Automatic login on register
 - [] Fix secret
+- [] Fix select on edit
 
