@@ -11,6 +11,7 @@ export function authMiddleware(req, res, next) {
         const decodedToken =jwt.verify(token, 'SECRETGOESHERE');
         
         req.user = decodedToken;
+        res.locals.user = decodedToken;
     } catch (err) {
         res.clearCookie('auth');
         
