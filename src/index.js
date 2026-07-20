@@ -13,6 +13,11 @@ app.engine(
   "hbs",
   engine({
     extname: "hbs",
+    helpers: {
+      isSelected() {
+        return this.selected ? 'selected' : '';
+      }
+    }
   }),
 );
 app.set("view engine", "hbs");
