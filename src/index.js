@@ -1,6 +1,7 @@
 import express from "express";
 import { engine } from "express-handlebars";
 import cookieParser from "cookie-parser";
+import "dotenv/config";
 
 import { authMiddleware } from "./middlewares/authMiddleware.js";
 import routes from "./routes.js";
