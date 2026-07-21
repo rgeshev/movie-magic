@@ -29,7 +29,7 @@ movieController.post('/create', isAuth, async (req, res) => {
 // Details page
 movieController.get('/:movieId', async (req, res) => {
     const movieId = req.params.movieId;
-    const userId = req?.user.id;
+    const userId = req?.user?.id;
 
     const movie = await movieService.getById(movieId);
 
