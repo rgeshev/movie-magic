@@ -162,3 +162,7 @@ SoftUni JS Back-End Course Workshop
 - [] Make token generation async
 - [] Fix rating
 
+## Workshop 4 - Validation and Error Handling
+
+- [] Add resources
+
