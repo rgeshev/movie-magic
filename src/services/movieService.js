@@ -11,8 +11,8 @@ function getById(movieId) {
 }
 
 function create(movieData, userId) {
-  movieData.rating = Number(movieData.rating);
-  movieData.year = Number(movieData.year);
+  // movieData.rating = Number(movieData.rating);
+  // movieData.year = Number(movieData.year);
   movieData.userId = userId;
 
   return movieRepository.create(movieData);
