@@ -169,9 +169,10 @@ SoftUni JS Back-End Course Workshop
 - [x] Create Movie Scheme with Zod
 - [x] Catch, extract and return errors
 - [x] Populate already filled data
-- [] Populate select category
+- [x] Populate select category
 - [] Show single error
 - [] Show multiple errors
+
 
 
 
