@@ -170,9 +170,9 @@ SoftUni JS Back-End Course Workshop
 - [x] Catch, extract and return errors
 - [x] Populate already filled data
 - [x] Populate select category
-- [] Show single error
+- [x] Show single error
+- [x] Validate enum (movie category)
 - [] Show multiple errors
-
 
 
 
