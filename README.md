@@ -175,9 +175,14 @@ SoftUni JS Back-End Course Workshop
 - [x] Show multiple errors
 - [x] Get prisma errors
 
+### Artist validation and error handling
+- [x] Create schema
+- [x] Validate on create
+- [x] Get error message
 
-
-- [] Validate Artist
-- [] Validate User
-- [] Validate repeat password
+### User validation and error handling
+- [x] Validate User
+- [x] Validate repeat password
+- [] Validate unique email (async validation)
+- [] Complex password validation
 
