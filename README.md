@@ -183,6 +183,6 @@ SoftUni JS Back-End Course Workshop
 ### User validation and error handling
 - [x] Validate User
 - [x] Validate repeat password
-- [] Validate unique email (async validation)
-- [] Complex password validation
+- [x] Validate unique email (async validation)
+
 
